@@ -1,0 +1,68 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+
+
+.av-colblock  {
+  color: #000;
+  margin: 0.2rem;
+  //margin: 0 auto;
+  max-width: 740px;
+  padding: 0.3rem;
+  //background-color: #fff;
+  .col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12 {
+    background-color: #d0d0d0;
+    padding: 0.3rem;
+    max-width: unset;
+    .editor-inner-blocks > div > div:first-of-type {
+      margin: 0 10px;
+      border: 5px solid #fff;
+      width: 100%;
+    }
+    .editor-inner-blocks > div > div {
+      margin: 0 10px;
+      border: 5px solid #fff;
+      border-top: 0;
+      width: 100%;
+    }
+
+  }
+  div[class^="col-"] {
+    background-color: #fff;
+    color: #000;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .editor-rich-text.block-editor-rich-text .block-editor-block-list__block-edit:before {
+    background-color: #fff;
+  }
+}
+
+
+.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12 {
+  padding: 0.5rem;
+}
+
+.row .block-editor-block-list__layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.edit-post-visual-editor .editor-block-list__block {
+margin: 0 auto;
+max-width: 1200px;
+}
+
+.wp-block-cgb-block-bootstrap-container{
+
+    background: #e8e8e8;
+    border: 2px dotted #292929;
+    color: #292929;
+    margin: 0 auto;
+    padding: 1rem;
+
+}

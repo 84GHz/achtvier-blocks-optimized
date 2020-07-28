@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-achtvier-bar-counter {
+  width: 100%; }
+  .wp-block-achtvier-bar-counter .innerBar {
+    height: 100%; }
+  .wp-block-achtvier-bar-counter .counterlabel-textwrapper {
+    position: absolute;
+    top: 0; }
+  .wp-block-achtvier-bar-counter .counter-wrapper {
+    position: relative; }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-achtvier-newsticker {
+  height: 50px;
+  overflow: hidden;
+  position: relative; }
+
+.wp-block-achtvier-newsticker p, .wp-block-achtvier-newsticker a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: wp-block-achtvier-newsticker 20s linear infinite;
+  -webkit-animation: wp-block-achtvier-newsticker 20s linear infinite;
+  animation: wp-block-achtvier-newsticker 20s linear infinite; }
+
+/* Move it (define the animation) */
+@-moz-keyframes wp-block-achtvier-newsticker {
+  0% {
+    -moz-transform: translateX(100%); }
+  100% {
+    -moz-transform: translateX(-100%); } }
+
+@-webkit-keyframes wp-block-achtvier-newsticker {
+  0% {
+    -webkit-transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(-100%); } }
+
+@keyframes wp-block-achtvier-newsticker {
+  0% {
+    -moz-transform: translateX(100%);
+    /* Browser bug fix */
+    -webkit-transform: translateX(100%);
+    /* Browser bug fix */
+    transform: translateX(100%); }
+  100% {
+    -moz-transform: translateX(-100%);
+    /* Browser bug fix */
+    -webkit-transform: translateX(-100%);
+    /* Browser bug fix */
+    transform: translateX(-100%); } }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+/**
+  * #.# Styles
+  *
+  * CSS for both Frontend+Backend.
+  */
+.wp-block-achtvier-blocks-bettertabs .nav-item {
+  width: 100%; }
+
+.wp-block-achtvier-blocks-bettertabs .tab-pane {
+  display: none;
+  height: 20rem;
+  overflow-y: scroll; }
+
+.wp-block-achtvier-blocks-bettertabs .tab-pane.show {
+  display: block; }
+
+.wp-block-achtvier-blocks-bettertabs .inner-tabs {
+  background-color: #fff; }
+
+.wp-block-achtvier-blocks-bettertabs .inner-tabs:first-of-type {
+  background-color: #fff; }
+
+.wp-block-achtvier-blocks-bettertabs .avgb-tabs-panel {
+  padding-bottom: 5rem; }
+
+.nav-tabs--vertical {
+  border-bottom: none;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-flow: column nowrap; }
+
+.nav-tabs--left {
+  margin: 0 15px; }
+  .nav-tabs--left .nav-item + .nav-item {
+    margin-top: .25rem; }
+  .nav-tabs--left .nav-link {
+    transition: border-color .125s ease-in;
+    white-space: nowrap; }
+    .nav-tabs--left .nav-link:hover {
+      background-color: #f7f7f7;
+      border-color: transparent; }
+  .nav-tabs--left .nav-link.active {
+    border-bottom-color: #ddd;
+    border-right-color: #fff;
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+    margin-right: -1px; }
+    .nav-tabs--left .nav-link.active:hover {
+      background-color: #fff;
+      border-color: #0275d8 #fff #0275d8 #0275d8; }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-achtvier-better-tile:hover .linkoverlay {
+  height: 25%;
+  transition: height 0.15s ease-in; }
+  .wp-block-achtvier-better-tile:hover .linkoverlay a {
+    opacity: 1;
+    transition: all 0.15s ease-in; }
+
+.wp-block-achtvier-better-tile:hover .linkoverlay {
+  background: rgba(255, 255, 255, 0.7); }
+
+.wp-block-achtvier-better-tile:hover .linkoverlay:after, .wp-block-achtvier-better-tile:hover .linkoverlay:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.wp-block-achtvier-better-tile:hover .linkoverlay:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+  border-width: 12px;
+  margin-left: -12px; }
+
+.wp-block-achtvier-better-tile {
+  margin: 0 auto; }
+  .wp-block-achtvier-better-tile .kachel-inner-wrapper {
+    min-height: 18.1rem;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .wp-block-achtvier-better-tile .kachel-inner-wrapper > p, .wp-block-achtvier-better-tile .kachel-inner-wrapper h2 {
+      width: 100%; }
+  .wp-block-achtvier-better-tile .linkoverlay {
+    height: 0;
+    transition: height 0.15s ease-out;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .wp-block-achtvier-better-tile .linkoverlay a {
+      color: #000;
+      opacity: 0; }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-achtvier-overlay-tile {
+  position: relative; }
+  .wp-block-achtvier-overlay-tile .linkoverlay {
+    position: absolute;
+    top: 0; }
+    .wp-block-achtvier-overlay-tile .linkoverlay p {
+      padding-top: 0; }
+    .wp-block-achtvier-overlay-tile .linkoverlay img {
+      width: 100%; }
+
+.wp-block-achtvier-overlay-tile .linkoverlay {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px; }
+
+/*Styling vom Standard overlay-block wird überbückt*/
+.wp-block-achtvier-overlay-tile .linkoverlay:hover {
+  background-color: rgba(0, 0, 0, 0); }
+
+.wp-block-achtvier-overlay-tile .linkoverlay {
+  background-color: rgba(0, 0, 0, 0); }
+
+.wp-block-achtvier-overlay-tile .linkoverlay a, .wp-block-achtvier-overlay-tile .linkoverlay p {
+  opacity: 0; }
+
+.overlay-inner-wrapper {
+  height: 100%; }
+
+.linkoverlay:hover .overlay-inner-wrapper a, .linkoverlay:hover .overlay-inner-wrapper p {
+  opacity: 1;
+  -webkit-transition: .7s ease;
+  transition: .7s ease; }
+
+.linkoverlay:hover .overlay-inner-wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: .7s ease;
+  transition: .7s ease; }
+
+.linkoverlay .overlay-inner-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: .7s ease;
+  transition: .7s ease; }
+
+.linkoverlay .overlay-inner-wrapper a, .linkoverlay .overlay-inner-wrapper p {
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  transition: .7s ease; }
+
+.linkoverlay:hover .overlay-inner-wrapper a, .linkoverlay:hover .overlay-inner-wrapper p {
+  opacity: 1;
+  -webkit-transition: .7s ease;
+  transition: .7s ease; }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-cgb-block-achtvier-guten-slider {
+  border: 0.2rem solid #000;
+  color: #000;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem; }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-achtvier-parallax-bg-wrapper {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media (min-width: 769px) {
+  .wp-block-achtvier-read-more .atv-read-more-link {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .wp-block-achtvier-read-more .av-read-more-inner-wrapper {
+    position: relative;
+    max-height: 3rem;
+    overflow: hidden; }
+  .wp-block-achtvier-read-more .fade-out-wrapper {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, white 100%); }
+  .wp-block-achtvier-read-more .av-read-more-button-wrapper {
+    text-align: center; }
+    .wp-block-achtvier-read-more .av-read-more-button-wrapper button {
+      background-color: #fff;
+      border: 0;
+      margin-bottom: 3rem; }
+  .wp-block-achtvier-read-more .av-read-more-inner-wrapper.expanded {
+    overflow: auto;
+    transition: max-height ease 2s; }
+    .wp-block-achtvier-read-more .av-read-more-inner-wrapper.expanded .fade-out-wrapper {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: none; }
+  .wp-block-achtvier-read-more .av-read-more-link.hidden {
+    display: none; } }
