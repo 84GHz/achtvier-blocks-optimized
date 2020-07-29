@@ -7,7 +7,7 @@
  * Author URI:      https://84ghz.de
  * Text Domain:     achtvier-blocks-optimized
  * Domain Path:     /languages
- * Version:         0.22
+ * Version:         0.2
  *
  * @package         Achtvier_Blocks_Optimized
  */
@@ -98,7 +98,7 @@ if (!(class_exists("Puc_v4_Factory"))) {
   require 'plugin-update-checker/plugin-update-checker.php';
 }
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/84GHz/achtvier-blocks-optimized/',
+	'https://github.com/84GHz/achtvier-block-/manager',
 	__FILE__,
-	'achtvier-blocks-optimized'
+	'achtvier-block-manager'
 );
