@@ -73,7 +73,7 @@ max-width: 41.66667%;
 max-width: 66.66667%;
 }
 .col-xl-9 {
-  flex: 0 0 75%;
+  flex: 0 0 75%;  
 
 max-width: 75%;
 }
@@ -82,10 +82,11 @@ max-width: 75%;
 
 max-width: 83.33333%;
 }
-.col-xl-11 {
 
-}
 .col-xl-12 {
   flex: 0 0 100%;
   max-width: 100%;
+}
+.wp-block {
+  max-width: unset;
 }

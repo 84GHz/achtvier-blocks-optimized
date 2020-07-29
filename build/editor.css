@@ -69,6 +69,9 @@ body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page
   flex: 0 0 100%;
   max-width: 100%; }
 
+.wp-block {
+  max-width: unset; }
+
 /**
  * #.# Editor Styles
  *
