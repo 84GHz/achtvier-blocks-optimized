@@ -93,7 +93,10 @@ add_action( 'wp_enqueue_scripts', 'av_vendor_assets' );
 add_filter( 'block_categories', 'achtvier_block_category', 10, 2);
 
 //plugin update checker
-require 'plugin-update-checker/plugin-update-checker.php';
+
+if (!(class_exists("Puc_v4_Factory"))) {
+  require 'plugin-update-checker/plugin-update-checker.php';
+}
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/84GHz/achtvier-blocks-optimized/',
 	__FILE__,
