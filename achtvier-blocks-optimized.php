@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:     Achtvier Blocks 2020
- * Plugin URI:      https://84ghz.de
+ * Plugin URI:      https://github.com/84GHz/achtvier-blocks-optimized
  * Description:     Blocksammlung 84GHz
  * Author:          84gHz
  * Author URI:      https://84ghz.de
