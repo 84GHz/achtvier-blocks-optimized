@@ -16,7 +16,7 @@
       carousel.owlCarousel({
         loop:true,
         margin:10, 
-        autoplay: true,
+        autoplay: carousel.data('autoplay'),
         nav: carousel.data("showarrows"),
         dots: carousel.data("showdots"),        
         responsiveClass:true,
