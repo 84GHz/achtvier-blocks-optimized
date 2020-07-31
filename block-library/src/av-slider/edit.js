@@ -36,10 +36,10 @@ function AVSliderEdit (props){
       props.setAttributes( { autoplay: value } );
     };
   const onChangeShowPoints = value => {
-      props.setAttributes( { autoplay: value } );
+      props.setAttributes( { showpoints: value } );
     };
   const onChangeShowArrows = value => {
-      props.setAttributes( { autoplay: value } );
+      props.setAttributes( { showarrows: value } );
     };
   const onChangeSlidePadding = value => {
      props.setAttributes( { slidepadding: value } );
@@ -94,11 +94,7 @@ function AVSliderEdit (props){
  checked={ props.attributes.showarrows }
  onChange={ onChangeShowArrows }
 />
-<ToggleControl
- label={ __( 'Autoplay' ) }
- checked={ props.attributes.autoplay }
- onChange={ onChangeAutoplay }
-/>
+
  </PanelBody>
 
 </InspectorControls>
