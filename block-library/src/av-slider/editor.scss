@@ -16,6 +16,7 @@
    }
 
  }
+ /*
  .wp-block-achtvier-block-achtvier-guten-slider > .block-editor-inner-blocks > .block-editor-block-list__layout {
    display: flex;
    flex-wrap: wrap;
@@ -26,9 +27,12 @@
       
  }
 
- } 
+ } */
   .block-editor-editor-skeleton__content .components-panel__body-toggle.components-button {
         background-color:      #007cba;
         color: #fff;
 
      }
+[data-type="achtvier/block-achtvier-guten-slider"] {
+  width: 100%;
+}

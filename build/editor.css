@@ -81,7 +81,6 @@ body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page
 .av-colblock {
   color: #000;
   margin: 0.2rem;
-  max-width: 740px;
   padding: 0.3rem; }
   .av-colblock .col-xl-1, .av-colblock .col-xl-2, .av-colblock .col-xl-3, .av-colblock .col-xl-4, .av-colblock .col-xl-5, .av-colblock .col-xl-6, .av-colblock .col-xl-7, .av-colblock .col-xl-8, .av-colblock .col-xl-9, .av-colblock .col-xl-10, .av-colblock .col-xl-11, .av-colblock .col-xl-12 {
     background-color: #d0d0d0;
@@ -107,7 +106,7 @@ body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page
 .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
   padding: 0.5rem; }
 
-.row .block-editor-block-list__layout {
+.row > div > .block-editor-block-list__layout {
   display: flex;
   flex-wrap: wrap; }
 
@@ -261,17 +260,24 @@ body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page
     width: 100%;
     min-height: 1px; }
 
-.wp-block-achtvier-block-achtvier-guten-slider > .block-editor-inner-blocks > .block-editor-block-list__layout {
-  display: flex;
-  flex-wrap: wrap; }
-  .wp-block-achtvier-block-achtvier-guten-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > div {
-    flex: 0 0 25%;
-    flex-wrap: wrap;
-    max-width: 25%; }
+/*
+ .wp-block-achtvier-block-achtvier-guten-slider > .block-editor-inner-blocks > .block-editor-block-list__layout {
+   display: flex;
+   flex-wrap: wrap;
+    > div {
+      flex: 0 0 25%;
+      flex-wrap: wrap;
+      max-width: 25%;
+      
+ }
 
+ } */
 .block-editor-editor-skeleton__content .components-panel__body-toggle.components-button {
   background-color: #007cba;
   color: #fff; }
+
+[data-type="achtvier/block-achtvier-guten-slider"] {
+  width: 100%; }
 
 /**
  * #.# Editor Styles
