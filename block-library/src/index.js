@@ -6,9 +6,6 @@ import * as bootstrapcol from './bootstrap-cols';
 import * as avsection from './avsection';
 import * as accordeon from './accordeon';
 import * as accordeonitem from './accordeonitem';
-import * as barcounter from './bar-counter';
-import * as barcounterwrapper from './bar-counter-wrapper';
-import * as iconcounter from './icon-counter';
 import * as minicontent from './mini-content';
 import * as newsticker from './newsticker';
 import * as singletab from './singletab';
@@ -43,9 +40,6 @@ export const registerAchtvierBlocks = () => {
 		avsection,
 		accordeonitem,
 		accordeon,
-		barcounter,
-		barcounterwrapper,
-		iconcounter,
 		minicontent,
 		newsticker,
 		singletab,

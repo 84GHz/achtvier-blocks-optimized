@@ -148,30 +148,6 @@ body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-.wp-block-achtvier-bar-counter .innerBar {
-  height: 100%; }
-
-.wp-block-achtvier-bar-counter .counterlabel-textwrapper {
-  position: absolute;
-  top: 0; }
-
-.wp-block-achtvier-bar-counter .counter-wrapper {
-  position: relative; }
-
-.wp-block-achtvier-counter-wrapper {
-  min-height: 20px;
-  padding: 1rem;
-  border: 1px dotted #000; }
-  .wp-block-achtvier-counter-wrapper label {
-    background-color: #0085ba;
-    color: #fff; }
-
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
 .wp-block-achtvierblocks-better-mini-content {
   background: #fff;
   border: 0.1rem dotted #000;

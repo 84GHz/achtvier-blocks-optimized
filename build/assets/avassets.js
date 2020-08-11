@@ -96,17 +96,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
-/***/ "./asset-library/src/counters/index.js":
-/*!*********************************************!*\
-  !*** ./asset-library/src/counters/index.js ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("/*lauch*/\n(function (avbarcounter, $, undefined) {\n  $(document).ready(function () {\n    // we check if the counter is already visible (doesn't have to be scrolled to)\n    counterLaunch();\n    window.addEventListener('scroll', counterLaunch); // provides animation for the progress bar and the number with a multiplier\n\n    function move(element, beginwidth, maxwidth, multiplier, animationspeed) {\n      var width = beginwidth;\n      var innerBar = element.find(\".innerBar\");\n      var counterNumber = element.find('.counter-number');\n      innerBar.width(width + \"%\"); //   console.log(element.css('width'));\n\n      var id = setInterval(frame, animationspeed);\n\n      function frame() {\n        if (width >= maxwidth) {\n          clearInterval(id);\n        } else {\n          width++;\n          innerBar.width(width + \"%\");\n          counterNumber.html(width * multiplier);\n        }\n      }\n    }\n\n    function counterLaunch() {\n      // This is then function used to detect if the element is scrolled into view\n      function elementScrolled(elem) {\n        if ($(elem).length) {\n          var docViewTop = $(window).scrollTop();\n          var docViewBottom = docViewTop + $(window).height();\n          var elemTop = $(elem).offset().top;\n\n          if (elemTop <= docViewBottom && elemTop >= docViewTop && !$(elem).hasClass(\"anim-started\")) {\n            $(elem).addClass(\"anim-started\");\n            return true;\n          } else {\n            return false;\n          }\n        } else {\n          return false;\n        }\n      }\n\n      if (elementScrolled('.wp-block-achtvier-counter-wrapper')) {\n        $(\".wp-block-achtvier-counter-wrapper\").each(function (index, element) {\n          var scrollspy = $(this).data(\"scrollspy\");\n          var innercounters = $(this).find('.wp-block-achtvier-bar-counter');\n          innercounters.each(function () {\n            console.log($(this).data(\"delay\"));\n            var barcounter = $(this);\n            setTimeout(function () {\n              move(barcounter, barcounter.data('counterbegin'), barcounter.data('counterend'), barcounter.data('multplier'), barcounter.data('animationspeed'));\n            }, barcounter.data(\"delay\"));\n          });\n          var innericoncounters = $(this).find('.wp-block-achtvier-icon-counter');\n          innericoncounters.each(function () {\n            console.log($(this).data(\"delay\"));\n            var barcounter = $(this);\n            var iconsource = $(this).data(\"countericon\");\n            var iconwidth = $(this).data(\"countericonwidth\");\n            var iconmargin = $(this).data(\"iconmargin\");\n            var animationInterval = $(this).data('animationspeed');\n            var counterbegin = $(this).data(\"counterbegin\");\n            var counterend = $(this).data(\"counterend\");\n            var counter = $(this).find(\".icon-counter-inner\");\n            setTimeout(function () {\n              var id = setInterval(frame, animationInterval);\n\n              function frame() {\n                if (counterbegin >= counterend) {\n                  clearInterval(id);\n                } else {\n                  counterbegin++;\n                  var spanstyle = \"style='margin-right: \" + iconmargin + \"px'\";\n                  var iconstyle = \"style='width: \" + iconwidth + \"px'\";\n                  counter.append(\"<span \" + spanstyle + \" >\" + \"<img class='counter-icon' \" + iconstyle + \" src='\" + iconsource + \"'></span>\");\n                }\n              }\n            }, $(this).data(\"delay\"));\n          });\n        });\n      }\n    }\n  });\n})(window.avbarcounter = window.avbarcounter || {}, jQuery);\n\n//# sourceURL=webpack://achtvier-blocks-optimized/./asset-library/src/counters/index.js?");
-
-/***/ }),
-
 /***/ "./asset-library/src/readmore/index.js":
 /*!*********************************************!*\
   !*** ./asset-library/src/readmore/index.js ***!
@@ -130,13 +119,13 @@ eval("/*lauch*/\n(function (avslider, $) {\n  $(document).ready(function () {\n 
 /***/ }),
 
 /***/ 0:
-/*!************************************************************************************************************************************!*\
-  !*** multi ./asset-library/src/counters/index.js ./asset-library/src/readmore/index.js ./asset-library/src/slidertrigger/index.js ***!
-  \************************************************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** multi ./asset-library/src/readmore/index.js ./asset-library/src/slidertrigger/index.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./asset-library/src/counters/index.js */\"./asset-library/src/counters/index.js\");\n__webpack_require__(/*! ./asset-library/src/readmore/index.js */\"./asset-library/src/readmore/index.js\");\nmodule.exports = __webpack_require__(/*! ./asset-library/src/slidertrigger/index.js */\"./asset-library/src/slidertrigger/index.js\");\n\n\n//# sourceURL=webpack://achtvier-blocks-optimized/multi_./asset-library/src/counters/index.js_./asset-library/src/readmore/index.js_./asset-library/src/slidertrigger/index.js?");
+eval("__webpack_require__(/*! ./asset-library/src/readmore/index.js */\"./asset-library/src/readmore/index.js\");\nmodule.exports = __webpack_require__(/*! ./asset-library/src/slidertrigger/index.js */\"./asset-library/src/slidertrigger/index.js\");\n\n\n//# sourceURL=webpack://achtvier-blocks-optimized/multi_./asset-library/src/readmore/index.js_./asset-library/src/slidertrigger/index.js?");
 
 /***/ })
 
