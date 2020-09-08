@@ -15,6 +15,7 @@ import * as boxhoveroverlay from './box-hover-overlay';
 import * as avslider from './av-slider';
 import * as parallaxbgwrapper from './parallax-bg-wrapper';
 import * as readmore from './readmore';
+import * as wrapper from './wrapper';
 
 
 /**
@@ -48,7 +49,8 @@ export const registerAchtvierBlocks = () => {
 		boxhoveroverlay,
 		avslider,
 		parallaxbgwrapper,
-		readmore
+		readmore,
+		wrapper
 	].forEach( registerBlock );
 
 };

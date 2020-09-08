@@ -269,3 +269,12 @@ body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page
  */
 .wp-block-atv-menu-read-more-mobile {
   border: 2px dotted brown; }
+
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.wp-block-achtvierblocks-wrapperblocks {
+  border: 1px dotted blue; }
