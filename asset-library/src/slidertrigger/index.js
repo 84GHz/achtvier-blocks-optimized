@@ -6,13 +6,11 @@
     $('.wp-block-achtvier-block-achtvier-guten-slider').each(function(){
       var carousel = $(this);
       carousel.addClass('owl-carousel');
-    //  var navpfeile = (carousel.data("showarrows") == 'true');
-  //    var navdots = (carousel.data("showpoints") == 'true');
-  //    var apstring = (carousel.data("autoplay"));
-   //   var string = "sdfsdfsdf";
-     // var maautoplay =  apstring.indexOf("ue") >= 0
-     // console.log(typeof(apstring));
-    //  carousel.addClass('owl-carousel')
+      var slideSpeed = 600 ;
+      if (carousel.data('slidespeed')) {
+        slideSpeed = carousel.data('slidespeed');
+      }
+
       carousel.owlCarousel({
         loop:true,
         margin:10, 
@@ -20,7 +18,8 @@
         nav: carousel.data("showarrows"),
         dots: carousel.data("showdots"),        
         responsiveClass:true,
-        
+        smartSpeed: slideSpeed,
+
         callbacks:true,
         
         responsive:{

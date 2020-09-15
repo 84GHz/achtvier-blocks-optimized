@@ -8,6 +8,7 @@ export default function save( props ) {
     data-slidesmobile={props.attributes.slidesmobile}
     data-autoplay={props.attributes.autoplay}
     data-showpoints={props.attributes.showpoints}
+    data-slidespeed={props.attributes.slidespeed}
     data-showarrows={props.attributes.showarrows}
     data-slidepadding={props.attributes.slidepadding}
     >

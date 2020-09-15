@@ -44,6 +44,9 @@ function AVSliderEdit (props){
   const onChangeSlidePadding = value => {
      props.setAttributes( { slidepadding: value } );
    };
+   const onChangeSlideSpeed = value => {
+    props.setAttributes( { slidespeed: value } );
+  };
 
   return (
     <Fragment>
@@ -78,6 +81,13 @@ function AVSliderEdit (props){
  onChange={ onChangeSlidePadding }
   min={ 1 }
   max={ 50 }
+/>
+  <RangeControl
+ label={ __( 'Slide Speed (ms)' ) }
+ value={ props.attributes.slidespeed }
+ onChange={ onChangeSlideSpeed }
+  min={ 0 }
+  max={ 2000 }
 />
     <ToggleControl
      label={ __( 'Autoplay' ) }
