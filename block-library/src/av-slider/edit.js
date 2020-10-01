@@ -79,7 +79,7 @@ function AVSliderEdit (props){
  label={ __( 'Margin Slides' ) }
  value={ props.attributes.slidepadding }
  onChange={ onChangeSlidePadding }
-  min={ 1 }
+  min={ 0 }
   max={ 50 }
 />
   <RangeControl

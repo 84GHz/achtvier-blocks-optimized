@@ -13,7 +13,7 @@
 
       carousel.owlCarousel({
         loop:true,
-        margin:10, 
+        margin:carousel.data('slidepadding'),
         autoplay: carousel.data('autoplay'),
         nav: carousel.data("showarrows"),
         dots: carousel.data("showdots"),        
