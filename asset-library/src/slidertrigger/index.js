@@ -2,7 +2,6 @@
 
 (function( avslider, $ ) {
   $(document).ready(function(){
-
     $('.wp-block-achtvier-block-achtvier-guten-slider').each(function(){
       var carousel = $(this);
       carousel.addClass('owl-carousel');
@@ -10,13 +9,14 @@
       if (carousel.data('slidespeed')) {
         slideSpeed = carousel.data('slidespeed');
       }
-
+      var isnav = (carousel.data('showarrows') === true ||carousel.data('showarrows') == true ) ;
+      var isdots =(carousel.data('showdots') === true || carousel.data('showarrows') == true ) ;
       carousel.owlCarousel({
         loop:true,
-        margin:carousel.data('slidepadding'),
-        autoplay: carousel.data('autoplay'),
-        nav: carousel.data("showarrows"),
-        dots: carousel.data("showdots"),        
+        margin:parseInt(carousel.data('slidepadding')),
+        autoplay: parseInt(carousel.data('autoplay')),
+        nav: isnav,
+        dots: isdots,        
         responsiveClass:true,
         smartSpeed: slideSpeed,
 
@@ -24,13 +24,13 @@
         
         responsive:{
             0:{
-                items:carousel.data("slidesmobile")
+                items:parseInt(carousel.data("slidesmobile"))
             },
             600:{
-                items:carousel.data("slidestablet")
+                items:parseInt(carousel.data("slidestablet"))
             },
             1000:{
-                items:carousel.data("slidesdesktop")
+                items:parseInt(carousel.data("slidesdesktop"))
             }
         },
     })
