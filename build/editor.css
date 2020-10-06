@@ -136,6 +136,9 @@ body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
+.wp-block-achtvierblocks-newaccordeon {
+  border: 1px dotted blueviolet; }
+
 /**
  * #.# Editor Styles
  *

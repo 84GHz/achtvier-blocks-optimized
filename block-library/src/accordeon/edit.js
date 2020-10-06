@@ -83,6 +83,7 @@ function AVAccordeonEdit (props){
              allowedBlocks={ [ 'achtvierblocks/newaccordeonpanel' ] }
              template={getTemplate(props.attributes.accordeonID)}
             />
+            <label>av-accordeon</label>
         </div>
          </Fragment>
 
