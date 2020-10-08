@@ -10,11 +10,12 @@
         slideSpeed = carousel.data('slidespeed');
       }
       var isnav = (carousel.data('showarrows') === true ||carousel.data('showarrows') == true ) ;
-      var isdots =(carousel.data('showdots') === true || carousel.data('showarrows') == true ) ;
+      var isdots =(carousel.data('showdots') === true || carousel.data('showdots') == true ) ;
+      var isautoplay =(carousel.data('autoplay') === true || carousel.data('autoplay') == true ) ;
       carousel.owlCarousel({
         loop:true,
         margin:parseInt(carousel.data('slidepadding')),
-        autoplay: parseInt(carousel.data('autoplay')),
+        autoplay: isautoplay,
         nav: isnav,
         dots: isdots,        
         responsiveClass:true,
