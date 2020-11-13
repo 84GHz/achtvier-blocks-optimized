@@ -7,7 +7,7 @@
  * Author URI:      https://84ghz.de
  * Text Domain:     achtvier-blocks-optimized
  * Domain Path:     /languages
- * Version:         0.397
+ * Version:         0.398
  *
  * @package         Achtvier_Blocks_Optimized
  */

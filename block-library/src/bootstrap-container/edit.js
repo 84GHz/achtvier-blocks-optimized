@@ -37,29 +37,30 @@ function ContainerEdit (props){
     <select value={ attributes.containerwidth } onChange={ onChangeContainerWidth }>
         <option value=" container-fluid">Volle Breite</option>
         <option value=" container">Begrenzte Breite</option>
-    </select>
+    </select> 
     <select value={ attributes.containervisibility } onChange={ onChangeContainerVisibility }>
         <option value="">Immer Sichtbar</option>
         <option value=" d-block d-sm-none">Nur auf Mobil sichtbar</option>
         <option value=" d-none d-sm-block">Nur Desktop und Tablet sichtbar</option>
     </select>
-    <a href="https://84ghz.de" target="_blank">
-      <h2>Anleitung für die Achtvier-Plugins</h2>
-      <img src="https://84ghz.de/explain-achtvier-kontainer-img.png" />
-    </a>
     </PanelBody>
     </InspectorControls>
     <div className={ props.className }>
      <div class = "row">
-       <InnerBlocks templateLock={ false } />
+     <InnerBlocks templateLock={ false }
+        renderAppender={ () => (
+          <InnerBlocks.ButtonBlockAppender />
+        )}
+
+      />
      </div>
-     <Tooltip
+     <Tooltip  
         text={ __( 'Edit Container Block' )  }
       >
         <label><span class="dashicons dashicons-admin-generic"></span></label>
       </Tooltip>
     </div>
-    </Fragment>
+    </Fragment> 
   );
 }
 export default ContainerEdit;
