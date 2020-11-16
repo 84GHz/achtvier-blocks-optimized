@@ -87,7 +87,7 @@ function AVSliderEdit (props){
  value={ props.attributes.slidespeed }
  onChange={ onChangeSlideSpeed }
   min={ 0 }
-  max={ 2000 }
+  max={ 15000 }
 />
     <ToggleControl
      label={ __( 'Autoplay' ) }
