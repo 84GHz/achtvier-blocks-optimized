@@ -11,6 +11,8 @@ export default function save( props ) {
     data-slidespeed={props.attributes.slidespeed}
     data-showarrows={props.attributes.showarrows}
     data-slidepadding={props.attributes.slidepadding}
+    data-sliderloop={props.attributes.loop}
+    data-rewind={props.attributes.rewind}
     >
     <InnerBlocks.Content />
     </div>

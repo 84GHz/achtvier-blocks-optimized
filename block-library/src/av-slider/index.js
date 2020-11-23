@@ -45,7 +45,17 @@ export const settings = {
 		slidespeed : {
 			type: 'number',
 			default: 600
+		},
+		loop: {
+			type: 'boolean',
+			default: true
+		},
+		rewind: {
+			type: 'boolean',
+			default: false
 		}
+
+
 
   },
 
@@ -60,7 +70,9 @@ export const settings = {
 		showarrows: attributes.showarrows,
 		showpoints: attributes.showpoints,
 		slidepadding: attributes.slidepadding,
-		slidespeed: 600
+		slidespeed: 600,
+		loop: true,
+		rewind: false
 	};
 },
   deprecated: [
@@ -110,7 +122,119 @@ export const settings = {
 				</div>
 			  );
 		}
-	  }
+	  },
+	  {
+		attributes: {
+			slidesdesktop: {
+				 type: 'number',
+				  default: 1,
+			 },
+			slidestablet: {
+				type: 'number',
+				  default: 1,
+			},
+				slidesmobile: {
+				type: 'number',
+				  default: 1,
+			},
+			  autoplay : {
+				  type: 'boolean',
+				  default: false,
+			  },
+			  showarrows : {
+				  type: 'boolean',
+				  default: false,
+			  },
+			  showpoints : {
+				  type: 'boolean',
+				  default: false,
+			  },
+			  slidepadding : {
+				  type: 'number',
+				  default: 0,
+			  },
+			  slidespeed : {
+				  type: 'number',
+				  default: 600
+			  },
+
+	  
+		},  
+		save (props) {
+			return (
+		<div className={props.className}
+		data-slidesdesktop={props.attributes.slidesdesktop}
+		data-slidestablet={props.attributes.slidestablet}
+		data-slidesmobile={props.attributes.slidesmobile}
+		data-autoplay={props.attributes.autoplay}
+		data-showpoints={props.attributes.showpoints}
+		data-slidespeed={props.attributes.slidespeed}
+		data-showarrows={props.attributes.showarrows}
+		data-slidepadding={props.attributes.slidepadding}		
+		>
+		<InnerBlocks.Content />
+		</div>
+			  );
+			}
+	  },
+	  {
+	  attributes: {
+		slidesdesktop: {
+			 type: 'number',
+			  default: 1,
+		 },
+		slidestablet: {
+			type: 'number',
+			  default: 1,
+		},
+			slidesmobile: {
+			type: 'number',
+			  default: 1,
+		},
+		  autoplay : {
+			  type: 'boolean',
+			  default: false,
+		  },
+		  showarrows : {
+			  type: 'boolean',
+			  default: false,
+		  },
+		  showpoints : {
+			  type: 'boolean',
+			  default: false,
+		  },
+		  slidepadding : {
+			  type: 'number',
+			  default: 0,
+		  },
+		  slidespeed : {
+			  type: 'number',
+			  default: 600
+		  },
+		  loop: {
+			  type: 'boolean',
+			  default: true
+		  } 
+  
+	},  
+	save (props) {
+		return (
+	<div className={props.className}
+	data-slidesdesktop={props.attributes.slidesdesktop}
+	data-slidestablet={props.attributes.slidestablet}
+	data-slidesmobile={props.attributes.slidesmobile}
+	data-autoplay={props.attributes.autoplay}
+	data-showpoints={props.attributes.showpoints}
+	data-slidespeed={props.attributes.slidespeed}
+	data-showarrows={props.attributes.showarrows}
+	data-slidepadding={props.attributes.slidepadding}
+	data-sliderloop={props.attributes.loop}		
+	>
+	<InnerBlocks.Content />
+	</div>
+		  );
+		}
+  }
   ],
   save
 };

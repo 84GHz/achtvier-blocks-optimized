@@ -47,6 +47,12 @@ function AVSliderEdit (props){
    const onChangeSlideSpeed = value => {
     props.setAttributes( { slidespeed: value } );
   };
+   const onChangeLoop = value => {
+    props.setAttributes( { loop: value } );
+  };
+  const onChangeRewind = value => {
+    props.setAttributes( { rewind: value } );
+  };
 
   return (
     <Fragment>
@@ -103,6 +109,16 @@ function AVSliderEdit (props){
  label={ __( 'Pfeile Anzeigen' ) }
  checked={ props.attributes.showarrows }
  onChange={ onChangeShowArrows }
+/>
+<ToggleControl
+ label={ __( 'Loop' ) }
+ checked={ props.attributes.loop }
+ onChange={ onChangeLoop }
+/>
+<ToggleControl
+ label={ __( 'Zurück zum Beginn' ) }
+ checked={ props.attributes.rewind }
+ onChange={ onChangeRewind }
 />
 
  </PanelBody>

@@ -8,16 +8,23 @@
       var slideSpeed = 600 ;
       if (carousel.data('slidespeed')) {
         slideSpeed = carousel.data('slidespeed');
-      }
+      } 
       var isnav = (carousel.data('showarrows') === true ||carousel.data('showarrows') == true ) ;
       var isdots =(carousel.data('showdots') === true || carousel.data('showdots') == true ) ;
       var isautoplay =(carousel.data('autoplay') === true || carousel.data('autoplay') == true ) ;
+      var isloop =(carousel.data('sliderloop') === true || carousel.data('sliderloop') == true ) ;
+      var isrewind =(carousel.data('rewind') === true || carousel.data('rewind') == true ) ;
+      console.log(isdots);
+      console.log(isloop);
+
       carousel.owlCarousel({
-        loop:true,
+        loop:isloop,
+        rewind: isrewind,
         margin:parseInt(carousel.data('slidepadding')),
         autoplay: isautoplay,
-        nav: isnav,
-        dots: isdots,        
+        nav: isnav,        
+        rewind: true,
+        dots: isdots,    
         responsiveClass:true,
         smartSpeed: slideSpeed,
 
@@ -25,17 +32,17 @@
         
         responsive:{
             0:{
-                items:parseInt(carousel.data("slidesmobile"))
+               items:parseInt(carousel.data("slidesmobile")), 
             },
             600:{
-                items:parseInt(carousel.data("slidestablet"))
+                items:parseInt(carousel.data("slidestablet")),            
             },
             1000:{
-                items:parseInt(carousel.data("slidesdesktop"))
+                items:parseInt(carousel.data("slidesdesktop")),
             }
         },
     })
-
+  console.log(carousel);
 
 });
 
