@@ -9,13 +9,20 @@
       if (carousel.data('slidespeed')) {
         slideSpeed = carousel.data('slidespeed');
       } 
+      
       var isnav = (carousel.data('showarrows') === true ||carousel.data('showarrows') == true ) ;
       var isdots =(carousel.data('showdots') === true || carousel.data('showdots') == true ) ;
       var isautoplay =(carousel.data('autoplay') === true || carousel.data('autoplay') == true ) ;
       var isloop =(carousel.data('sliderloop') === true || carousel.data('sliderloop') == true ) ;
       var isrewind =(carousel.data('rewind') === true || carousel.data('rewind') == true ) ;
-      console.log(isdots);
-      console.log(isloop);
+
+      if (!($(this).hasAttribute('data-sliderloop'))) {
+        isloop = true;
+      }       
+      if (!($(this).hasAttribute('data-rewind'))) {
+        isrewind = false;
+      }       
+
 
       carousel.owlCarousel({
         loop:isloop,
