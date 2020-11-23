@@ -19,6 +19,6 @@
     display: flex;
     height: auto !important;
 }
-.owl-next.disabled, .owl-prev.disabled {
+.owl-next.disabled span, .owl-prev.disabled span {
     display: none;
 }
