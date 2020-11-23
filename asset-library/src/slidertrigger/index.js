@@ -15,8 +15,12 @@
       var isautoplay =(carousel.data('autoplay') === true || carousel.data('autoplay') == true ) ;
       var isloop =(carousel.data('sliderloop') === true || carousel.data('sliderloop') == true ) ;
       var isrewind =(carousel.data('rewind') === true || carousel.data('rewind') == true ) ;
-
-   
+      if(typeof(carousel.data('sliderloop'))=='undefined') {
+        isloop = true;
+      }
+      if(typeof(carousel.data('rewind'))=='undefined') {
+        isrewind = false;
+      } 
 
 
       carousel.owlCarousel({
@@ -24,8 +28,8 @@
         rewind: isrewind,
         margin:parseInt(carousel.data('slidepadding')),
         autoplay: isautoplay,
-        nav: isnav,        
-        rewind: true,
+        nav: isnav,                
+        navRewind: false,
         dots: isdots,    
         responsiveClass:true,
         smartSpeed: slideSpeed,

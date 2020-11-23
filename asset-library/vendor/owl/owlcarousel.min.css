@@ -19,3 +19,6 @@
     display: flex;
     height: auto !important;
 }
+.owl-next.disabled, .owl-prev.disabled {
+    display: none;
+}
