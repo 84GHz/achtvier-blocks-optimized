@@ -16,12 +16,7 @@
       var isloop =(carousel.data('sliderloop') === true || carousel.data('sliderloop') == true ) ;
       var isrewind =(carousel.data('rewind') === true || carousel.data('rewind') == true ) ;
 
-      if (!($(this).hasAttribute('data-sliderloop'))) {
-        isloop = true;
-      }       
-      if (!($(this).hasAttribute('data-rewind'))) {
-        isrewind = false;
-      }       
+   
 
 
       carousel.owlCarousel({
