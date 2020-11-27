@@ -7,12 +7,14 @@
  * Author URI:      https://84ghz.de
  * Text Domain:     achtvier-blocks-optimized
  * Domain Path:     /languages
- * Version:         0.405
+ * Version:         0.406
  *
  * @package         Achtvier_Blocks_Optimized
  */
 
 // Your code starts here.
+
+
 
 function plugin_slug_register_blocks() {
 
@@ -24,12 +26,7 @@ function plugin_slug_register_blocks() {
     );
     $editor_css = 'build/editor.css';
 
-	wp_enqueue_script(
-		'extra-grid-filters',
-		plugins_url( 'extra/blockfilter.js', __FILE__ ),
-		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
-		true
-);
+
     $dir = dirname( __FILE__ );
   // register gutenberg editor style css
     wp_register_style(
@@ -59,6 +56,20 @@ function plugin_slug_register_blocks() {
 
 add_action( 'init', 'plugin_slug_register_blocks' );
 
+
+//load filter for cols
+
+function load_av_cols_filter ($hook) {
+
+	wp_enqueue_script(
+		'extra-grid-filters',
+		plugins_url( 'extra/blockfilter.js', __FILE__ ),
+		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
+		true
+);
+}
+add_action('admin_enqueue_scripts', 'load_av_cols_filter');
+
 //here we add the blocks' category
 function achtvier_block_category( $categories, $post ) {
 	return array_merge(
@@ -86,7 +97,7 @@ function av_vendor_assets() {
 	wp_enqueue_style( 'av-owl-mainstyle');
 	wp_enqueue_style( 'av-owl-themestyle');
 	wp_enqueue_script( 'av-owl-carousel', plugin_dir_url( __FILE__ ) . '/asset-library/vendor/owl/owl.carousel.min.js', array( 'jquery' ) );
-}
+} 
 
 add_action( 'wp_enqueue_scripts', 'av_vendor_assets' );
 
