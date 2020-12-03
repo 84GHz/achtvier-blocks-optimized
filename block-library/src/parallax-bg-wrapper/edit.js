@@ -10,14 +10,20 @@ const { Fragment } = wp.element;
 
 
 function AVParallaxBgEdit (props){
-  const getImageButton = (openEvent) => {
+  if (typeof(props.attributes.parallaxID)=="undefined") {
+  
+    props.setAttributes({ parallaxID: (+new Date).toString(36).slice(-8) });
+    console.log(props.attributes);
+   }
+   
+  const getImageButton = (openEvent, caption) => {
   return (
     <div className="button-container">
       <Button
        onClick={ openEvent }
        className="button button-large"
       >
-        HGBild
+        { caption }
       </Button>
     </div>
   );
@@ -33,6 +39,13 @@ function AVParallaxBgEdit (props){
      mediaID: media.id,
    } );
  }
+ function onSelectMobileImage( media ) {
+  setAttributes( {
+    mobilemediaURL: media.url,
+    mobilemediaID: media.id,
+  } );
+}
+
  return (
    <Fragment>
    <InspectorControls>
@@ -40,8 +53,14 @@ function AVParallaxBgEdit (props){
      <MediaUpload
        onSelect={ onSelectImage }
        type="image"
-       value={ props.attributes.imageID }
-       render={ ({ open }) => getImageButton(open) }
+       value={ props.attributes.mediaID }
+       render={ ({ open }) => getImageButton(open, 'HGDesktop') }
+     />
+      <MediaUpload
+       onSelect={ onSelectMobileImage }
+       type="image"
+       value={ props.attributes.mobilemediaID }
+       render={ ({ open }) => getImageButton(open, 'HGMobil') }
      />
      </PanelBody>
    </InspectorControls>
