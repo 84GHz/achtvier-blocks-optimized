@@ -11,7 +11,7 @@
       } 
       
       var isnav = (carousel.data('showarrows') === true ||carousel.data('showarrows') == true ) ;
-      var isdots =(carousel.data('showdots') === true || carousel.data('showdots') == true ) ;
+      var isdots =(carousel.data('showpoints') === true || carousel.data('showpoints') == true ) ;
       var isautoplay =(carousel.data('autoplay') === true || carousel.data('autoplay') == true ) ;
       var isloop =(carousel.data('sliderloop') === true || carousel.data('sliderloop') == true ) ;
       var isrewind =(carousel.data('rewind') === true || carousel.data('rewind') == true ) ;
@@ -21,7 +21,7 @@
       if(typeof(carousel.data('rewind'))=='undefined') {
         isrewind = false;
       } 
-
+      console.log('dots:', isdots);
 
       carousel.owlCarousel({
         loop:isloop,
@@ -48,7 +48,6 @@
             }
         },
     })
-  console.log(carousel);
 
 });
 
