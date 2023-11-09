@@ -1,5 +1,8 @@
-const {  InnerBlocks } = wp.blockEditor;
+const {  InnerBlocks, useBlockProps } = wp.blockEditor;
+
 const { RichText  } = wp.editor;
+const {  PanelBody, Tooltip, Panel, TextControl  } = wp.components;
+
 const { __ } = wp.i18n; // Import __() from wp.i18n
 function AccordeonItemEdit (props){
 		const {className} = props;
@@ -13,22 +16,26 @@ function AccordeonItemEdit (props){
   			props.setAttributes({ panelTitle: changes });
 		  };
 		  
-
       return ( 
-  				<div class={ className + " card" }>
-  				<div id={props.attributes.accpanelID} class="collapse show">
-  				<div className="card-header">
-  				<RichText
-  						value={ props.attributes.panelTitle }
-  						onChange={ updateHeader }
-  						placeholder={ __( 'Panel Titel…....' ) }
-  				/>
-  				</div>
-  					<div class="card-body">
-  						 <InnerBlocks />
-  					</div>
-  				</div>
-  				</div>
-      );
+   <div {...useBlockProps()}>
+    <PanelBody title={    typeof(props.attributes.panelTitle) !== 'undefined' ? props.attributes.panelTitle  : "Accordeon-Element (noch keinen Titel)"     }  initialOpen={ false } >
+	  <div className="card-header">
+     	<RichText
+		  value={ props.attributes.panelTitle }
+		  onChange={ updateHeader }
+		  placeholder={ __( 'Element-Titel...' ) }
+	  />
+	  </div>
+	  	<div class="card-body">
+		   <InnerBlocks 
+		       renderAppender={ () => (
+				<InnerBlocks.ButtonBlockAppender />
+			  )}
+		   />
+ 		</div>
+
+   </PanelBody>
+	</div>
+   );
 }
 export default AccordeonItemEdit;

@@ -4,6 +4,14 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
- .wp-block-achtvierblocks-wrapperblocks {
-     border: 1px dotted blue;
- }
+
+ 
+ [data-type="achtvierblocks/wrapperblocks"]  {
+    background-color: #d3deff;
+    padding: .3rem;
+  }
+  [data-type="achtvierblocks/wrapperblocks"] label ,   [data-type="achtvierblocks/wrapperblocks"]   .block-editor-inner-blocks{
+    background-color: #fff;
+    
+  } 
+

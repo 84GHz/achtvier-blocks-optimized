@@ -11,6 +11,7 @@ function WrapperBlockEdit (props){
 						   renderAppender={ () => (
           				<InnerBlocks.ButtonBlockAppender />
         				)}/>
+						<label >wrapper</label>
   				</div>
       );
 }

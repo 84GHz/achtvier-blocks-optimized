@@ -140,8 +140,12 @@ function ColEdit (props){
     </PanelBody>
 
     </InspectorControls>
-    <div className={ colclasses }>
+    <div className={ 'inb-col' }>
 
+     <PanelBody title={"Column"}
+           initialOpen={false}
+
+     >
       <InnerBlocks templateLock={ false }
         renderAppender={ () => (
           <InnerBlocks.ButtonBlockAppender />
@@ -154,6 +158,7 @@ function ColEdit (props){
       >
             <label><span class="dashicons dashicons-admin-generic"></span></label>
       </Tooltip>
+      </PanelBody>
    </div>
     </Fragment>
 

@@ -6,95 +6,77 @@
  */
 
 .wp-block-cgb-block-bootstrap-container   {
-  background: #E8E8E8;
-  border: 2px dotted #000;
   color: #000;
+  border: 1px solid #3655b3;
+
   margin: 0 auto;
-  padding: 1rem;
+  background-color: #d3deff;
+  label {
+    cursor: pointer;
+  }
   label span.dashicons{
     color: grey;
     font-size: 30px;
   }
+  .components-panel__body-title > button.components-button {
+    background-color: #a6bcff;
+    padding: 0.8rem 1rem;
+  }
+  .components-panel__body > .components-panel__body-title {
+
+  }
+.is-opened > div > button.components-button {
+  background-color: #a6bcff;
 }
+.components-panel__body {
+  padding-top: 0;
+}
+
+.components-panel__body.is-opened > .components-panel__body-title {
+  margin: 0;
+}
+.components-panel__body.is-opened {
+  padding: 0;
+    
+}
+}
+
+
 .inlineControls {
   display: flex;
 }
 .inlineControls .components-base-control__field {
   display: inline-flex;
 }
+
 /*
 body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page .editor-default-block-appender, body.gutenberg-editor-page .editor-block-list__block {
   max-width: 100% !important;
 }*/
+.row .components-panel__body.is-opened {
+  border: 1px solid #3655b3;
 
+}
 @media screen and ( min-width: 768px ) {
   body.gutenberg-editor-page  .edit-post-visual-editor .editor-post-title,
   body.gutenberg-editor-page  .edit-post-visual-editor .editor-block-list__block {
 	max-width:	1100px;
     }
 }
-// bootstrap shite
-.col-xl-1 {
+.av-colblock { 
 
 }
-.col-xl-2 {
-  flex: 0 0 16.66667%;
-
-max-width: 16.66667%;
-}
-.col-xl-3 {
-  flex: 0 0 25%;
-
-max-width: 25%;
-}
-.col-xl-4 {
-  flex: 0 0 33.33333%;
-
-max-width: 33.33333%;
-}
-.col-xl-5 {
-  flex: 0 0 41.66667%;
-
-max-width: 41.66667%;
-}
-.col-xl-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-.col-xl-7 {
-  flex: 0 0 58.33333%;
- max-width: 58.33333%;
 
 
-}
-.col-xl-8 {
-  flex: 0 0 66.66667%;
 
-max-width: 66.66667%;
-}
-.col-xl-9 {
-  flex: 0 0 75%;  
 
-max-width: 75%;
-}
-.col-xl-10 {
-  flex: 0 0 83.33333%;
-
-max-width: 83.33333%;
-}
-
-.col-xl-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-.wp-block {
-  max-width: unset;
-}
-.block-editor-block-list__layout .wp-block { 
-  border: 1px dotted;
-}
 .block-editor-block-list__insertion-point-inserter  {
   display: flex;
   justify-content: flex-start;
 
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block {
+  
+  padding-bottom: 50px;
 }

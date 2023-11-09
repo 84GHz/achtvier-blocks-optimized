@@ -167,6 +167,8 @@ return (
                     template={ getTabsTemplate( attributes ) }
                     templateLock="all"
                     allowedBlocks={ [ 'achtvier/bettertab' ] }
+                    renderAppender={ () => (
+                      <InnerBlocks.ButtonBlockAppender  /> )}
                   />
 
                 </div>

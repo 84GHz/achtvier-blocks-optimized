@@ -14,6 +14,7 @@ function AVAccordeonEdit (props){
 
 
   function onAccordeonOnChange(changes) {
+      console.log("onacc chane", changes)
       setAttributes({
           accordeonOn: changes
       });
@@ -36,38 +37,10 @@ function AVAccordeonEdit (props){
  
  if (typeof(props.attributes.accordeonID)=="undefined") {
    var datid = (+new Date).toString(36).slice(-8);
-   console.log(props.attributes.accordeonOn);
+   setAttributes({ accordeonID: datid });
+ 
+     }
 
-   if(props.attributes.accordeonOn) {
-    setAttributes({ accordeonID: datid });
-    var children = select('core/block-editor').getBlocksByClientId(props.clientId)[0].innerBlocks;
-     for (var i = 0; i < children.length ; i++) {
-      dispatch('core/block-editor').updateBlockAttributes(children[i].clientId, {parentID: props.attributes.accordeonID})
-     }
-   }
-   else {
-     setAttributes({ accordeonID: null });
-     var children = select('core/block-editor').getBlocksByClientId(props.clientId)[0].innerBlocks;
-     for (var i = 0; i < children.length ; i++) {
-      dispatch('core/block-editor').updateBlockAttributes(children[i].clientId, {parentID: null})
-     }
-   } 
-
-     }
-   else {
-     if(props.attributes.accordeonOn) {
-      var children = select('core/block-editor').getBlocksByClientId(props.clientId)[0].innerBlocks;
-       for (var i = 0; i < children.length ; i++) {
-        dispatch('core/block-editor').updateBlockAttributes(children[i].clientId, {parentID: props.attributes.accordeonID})
-       }
-     }
-     else {
-       var children = select('core/block-editor').getBlocksByClientId(props.clientId)[0].innerBlocks;
-       for (var i = 0; i < children.length ; i++) {
-        dispatch('core/block-editor').updateBlockAttributes(children[i].clientId, {parentID: null})
-       }
-     }
-   }
 
 
 

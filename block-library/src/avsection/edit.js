@@ -28,7 +28,10 @@ function AVSectionEdit (props){
   				</PanelBody>
   			</InspectorControls>
   			<section className={props.className} id={props.attributes.sectionID}>
-  				<InnerBlocks />
+  				<InnerBlocks
+				 renderAppender={ () => (
+					<InnerBlocks.ButtonBlockAppender  /> )}
+				/>
   				<label>content-section</label>
   			</section>
   			</Fragment>

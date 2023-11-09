@@ -5,79 +5,79 @@
  * which makes it higher in priority.
  */
 .wp-block-cgb-block-bootstrap-container {
-  background: #E8E8E8;
-  border: 2px dotted #000;
   color: #000;
+  border: 1px solid #3655b3;
   margin: 0 auto;
-  padding: 1rem; }
-  .wp-block-cgb-block-bootstrap-container label span.dashicons {
-    color: grey;
-    font-size: 30px; }
+  background-color: #d3deff;
+}
+.wp-block-cgb-block-bootstrap-container label {
+  cursor: pointer;
+}
+.wp-block-cgb-block-bootstrap-container label span.dashicons {
+  color: grey;
+  font-size: 30px;
+}
+.wp-block-cgb-block-bootstrap-container .components-panel__body-title > button.components-button {
+  background-color: #a6bcff;
+  padding: 0.8rem 1rem;
+}
+.wp-block-cgb-block-bootstrap-container .is-opened > div > button.components-button {
+  background-color: #a6bcff;
+}
+.wp-block-cgb-block-bootstrap-container .components-panel__body {
+  padding-top: 0;
+}
+.wp-block-cgb-block-bootstrap-container .components-panel__body.is-opened > .components-panel__body-title {
+  margin: 0;
+}
+.wp-block-cgb-block-bootstrap-container .components-panel__body.is-opened {
+  padding: 0;
+}
 
 .inlineControls {
-  display: flex; }
+  display: flex;
+}
 
 .inlineControls .components-base-control__field {
-  display: inline-flex; }
+  display: inline-flex;
+}
 
 /*
 body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page .editor-default-block-appender, body.gutenberg-editor-page .editor-block-list__block {
   max-width: 100% !important;
 }*/
+.row .components-panel__body.is-opened {
+  border: 1px solid #3655b3;
+}
+
 @media screen and (min-width: 768px) {
   body.gutenberg-editor-page .edit-post-visual-editor .editor-post-title,
   body.gutenberg-editor-page .edit-post-visual-editor .editor-block-list__block {
-    max-width: 1100px; } }
-
-.col-xl-2 {
-  flex: 0 0 16.66667%;
-  max-width: 16.66667%; }
-
-.col-xl-3 {
-  flex: 0 0 25%;
-  max-width: 25%; }
-
-.col-xl-4 {
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%; }
-
-.col-xl-5 {
-  flex: 0 0 41.66667%;
-  max-width: 41.66667%; }
-
-.col-xl-6 {
-  flex: 0 0 50%;
-  max-width: 50%; }
-
-.col-xl-7 {
-  flex: 0 0 58.33333%;
-  max-width: 58.33333%; }
-
-.col-xl-8 {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%; }
-
-.col-xl-9 {
-  flex: 0 0 75%;
-  max-width: 75%; }
-
-.col-xl-10 {
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%; }
-
-.col-xl-12 {
-  flex: 0 0 100%;
-  max-width: 100%; }
-
-.wp-block {
-  max-width: unset; }
-
-.block-editor-block-list__layout .wp-block {
-  border: 1px dotted; }
-
+    max-width: 1100px;
+  }
+}
 .block-editor-block-list__insertion-point-inserter {
   display: flex;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block {
+  padding-bottom: 50px;
+}
+
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.wp-block-achtvier-bootstrap-nested-container {
+  background-color: #d3deff;
+  border: 1px solid #3655b3;
+}
+.wp-block-achtvier-bootstrap-nested-container .components-panel__body-title {
+  background-color: #a6bcff;
+}
 
 /**
  * #.# Editor Styles
@@ -87,67 +87,135 @@ body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page
  */
 .av-colblock {
   color: #000;
-  margin: 0.2rem;
-  padding: 0.3rem; }
-  .av-colblock .col-xl-1, .av-colblock .col-xl-2, .av-colblock .col-xl-3, .av-colblock .col-xl-4, .av-colblock .col-xl-5, .av-colblock .col-xl-6, .av-colblock .col-xl-7, .av-colblock .col-xl-8, .av-colblock .col-xl-9, .av-colblock .col-xl-10, .av-colblock .col-xl-11, .av-colblock .col-xl-12 {
-    background-color: #d0d0d0;
-    padding: 0.3rem;
-    max-width: unset; }
-    .av-colblock .col-xl-1 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-2 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-3 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-4 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-5 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-6 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-7 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-8 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-9 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-10 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-11 .editor-inner-blocks > div > div:first-of-type, .av-colblock .col-xl-12 .editor-inner-blocks > div > div:first-of-type {
-      margin: 0 10px;
-      border: 5px solid #fff;
-      width: 100%; }
-    .av-colblock .col-xl-1 .editor-inner-blocks > div > div, .av-colblock .col-xl-2 .editor-inner-blocks > div > div, .av-colblock .col-xl-3 .editor-inner-blocks > div > div, .av-colblock .col-xl-4 .editor-inner-blocks > div > div, .av-colblock .col-xl-5 .editor-inner-blocks > div > div, .av-colblock .col-xl-6 .editor-inner-blocks > div > div, .av-colblock .col-xl-7 .editor-inner-blocks > div > div, .av-colblock .col-xl-8 .editor-inner-blocks > div > div, .av-colblock .col-xl-9 .editor-inner-blocks > div > div, .av-colblock .col-xl-10 .editor-inner-blocks > div > div, .av-colblock .col-xl-11 .editor-inner-blocks > div > div, .av-colblock .col-xl-12 .editor-inner-blocks > div > div {
-      margin: 0 10px;
-      border: 5px solid #fff;
-      border-top: 0;
-      width: 100%; }
-  .av-colblock div[class^="col-"] {
-    background-color: #fff;
-    color: #000;
-    margin: 0 auto;
-    padding: 1rem; }
-  .av-colblock .editor-rich-text.block-editor-rich-text .block-editor-block-list__block-edit:before {
-    background-color: #fff; }
+}
+
+div[class^=col-] {
+  background-color: #fff;
+  color: #000;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.editor-rich-text.block-editor-rich-text .block-editor-block-list__block-edit:before {
+  background-color: #fff;
+}
 
 .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
-  padding: 0.5rem; }
+  padding: 3px;
+}
 
 .row > div > .block-editor-block-list__layout {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 .edit-post-visual-editor .editor-block-list__block {
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1200px;
+}
 
-.wp-block-cgb-block-bootstrap-container {
-  background: #e8e8e8;
-  border: 1px dotted #292929;
-  color: #292929;
-  margin: 0 auto;
-  padding: 1rem; }
+.col-xl-1 {
+  flex: 0 0 calc(8.333% - 6px);
+  max-width: calc(8.333% - 6px);
+}
+
+.col-xl-2 {
+  flex: 0 0 calc(16.66667% - 6px);
+  max-width: calc(16.66667% - 6px);
+}
+
+.col-xl-3 {
+  flex: 0 0 calc(25% - 6px);
+  max-width: calc(25% - 6px);
+}
+
+.col-xl-4 {
+  flex: 0 0 calc(33.33333% - 6px);
+  max-width: calc(33.33333% - 6px);
+}
+
+.col-xl-5 {
+  flex: 0 0 calc(41.66667% - 6px);
+  max-width: calc(41.66667% - 6px);
+}
+
+.col-xl-6 {
+  flex: 0 0 calc(50% - 6px);
+  max-width: 49%;
+}
+
+.col-xl-7 {
+  flex: 0 0 calc(58.33333% - 6px);
+  max-width: calc(58.33333% - 6px);
+}
+
+.col-xl-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  flex: 0 0 calc(58.33333% - 6px);
+  max-width: calc(58.33333% - 6px);
+}
+
+.col-xl-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  flex: 0 0 calc(75% - 6px);
+  max-width: calc(75% - 6px);
+}
+
+.col-xl-10 {
+  flex: 0 0 calc(83.33333% - 6px);
+  max-width: calc(83.33333% - 6px);
+}
+
+.col-xl-11 {
+  flex: 0 0 calc(91.6667% - 6px);
+  max-width: calc(91.6667% - 6px);
+}
+
+.col-xl-12 {
+  flex: 0 0 calc(100% - 6px);
+  max-width: calc(100% - 6px);
+}
+
+.wp-block.av-colblock .inb-col > div > div {
+  padding: 3px;
+}
 
 .edit-post-visual-editor button.components-button {
-  padding: 0px; }
+  padding: 0px;
+}
 
 .block-editor-block-list__layout div[class^=".av-colblock"], .block-editor-block-list__layout .av-colblock {
-  border: unset; }
+  border: unset;
+}
 
+[data-type="cgb/block-bootstrap-cols"] {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
 button.block-editor-button-block-appender {
-  width: unset;
-  color: white;
-  background-color: black; }
+	width: unset;
+	color: white;
+	background-color: black;
+}
 
-body .block-editor-default-block-appender textarea.block-editor-default-block-appender__content {
-  padding: 0 0 0 50px; }
+body .block-editor-default-block-appender textarea.block-editor-default-block-appender__content {  
 
+  padding: 0 0 0 50px;
+
+}
+*/
 .block-editor-block-list__empty-block-inserter.block-editor-block-list__empty-block-inserter, .block-editor-default-block-appender .block-editor-inserter {
   left: 6px !important;
-  right: auto !important; }
+  right: auto !important;
+}
 
 .wp-block.block-editor-default-block-appender {
-  border: unset; }
+  border: unset;
+}
 
 /**
  * #.# Editor Styles
@@ -158,7 +226,8 @@ body .block-editor-default-block-appender textarea.block-editor-default-block-ap
 .wp-block-achtvier-section {
   border: 2px dotted #0085ba;
   padding: 1rem;
-  background-color: #f7f5f5; }
+  background-color: #f7f5f5;
+}
 
 /**
  * #.# Editor Styles
@@ -167,7 +236,9 @@ body .block-editor-default-block-appender textarea.block-editor-default-block-ap
  * which makes it higher in priority.
  */
 .wp-block-achtvierblocks-newaccordeon {
-  border: 1px dotted blueviolet; }
+  border: 1px dotted blueviolet;
+  background-color: #e4e9fa;
+}
 
 /**
  * #.# Editor Styles
@@ -175,21 +246,27 @@ body .block-editor-default-block-appender textarea.block-editor-default-block-ap
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-achtvierblocks-better-mini-content {
-  background: #fff;
-  border: 0.1rem dotted #000;
-  color: #000;
-  margin: 0 auto;
-  max-width: 300px;
-  padding: 1rem; }
-  .wp-block-achtvierblocks-better-mini-content img {
-    width: 100%; }
+[data-type="achtvierblocks/newaccordeonpanel"] {
+  background-color: #d3deff;
+}
+
+[data-type="achtvierblocks/newaccordeonpanel"] .block-editor-rich-text__editable {
+  background-color: #fff;
+}
+
+[data-type="achtvierblocks/newaccordeonpanel"] .components-panel__body-title > button.components-button {
+  background-color: #a6bcff;
+  padding: 0.8rem 1rem;
+}
+
+[data-type="achtvierblocks/newaccordeonpanel"] .card-body {
+  margin-top: 1rem;
+  background-color: #fff;
+}
+
+[data-type="achtvierblocks/newaccordeonpanel"] .is-opened .components-panel__body-title {
+  background-color: #a6bcff;
+}
 
 /**
  * #.# Editor Styles
@@ -203,57 +280,36 @@ body .block-editor-default-block-appender textarea.block-editor-default-block-ap
   color: #000;
   margin: 0 auto;
   max-width: 740px;
-  padding: 2rem; }
+  padding: 2rem;
+}
 
 .wp-block-achtvier-blocks-bettertabs .avgb-tabs-panel li {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 .wp-block-achtvier-blocks-bettertabs .bettertabs-tab {
   background-color: #90EE90;
   border: 1px solid #fff;
   float: left;
-  padding: 0.1rem; }
+  padding: 0.1rem;
+}
 
 .wp-block-achtvier-blocks-bettertabs .bettertabs-tab a {
   float: left;
-  padding: 0 0.3rem; }
+  padding: 0 0.3rem;
+}
 
 .wp-block-achtvier-blocks-bettertabs .bettertabs-tab svg {
-  margin-top: 5px; }
+  margin-top: 5px;
+}
 
 .wp-block-achtvier-blocks-bettertabs .avgb-tab-body {
   clear: left;
   background-color: #fff;
   border-color: grey;
   margin-top: 1rem;
-  min-height: 5rem; }
-
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-achtvier-better-tile {
-  background: #fff;
-  border: 0.1rem dotted #000;
-  color: #000;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
-
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-achtvier-overlay-tile .overlay-wrapper {
-  min-height: 5rem; }
-
-.wp-block-achtvier-overlay-tile .counterlabel-textwrapper {
-  position: absolute;
-  top: 0; }
+  min-height: 5rem;
+}
 
 /**
  * #.# Editor Styles
@@ -262,31 +318,43 @@ body .block-editor-default-block-appender textarea.block-editor-default-block-ap
  * which makes it higher in priority.
  */
 .wp-block-achtvier-block-achtvier-guten-slider {
-  background: #f8f8f8;
+  background: #A5FFD6;
   margin: 0 auto;
-  padding: 2rem; }
-  .wp-block-achtvier-block-achtvier-guten-slider .editor-block-list__layout {
-    width: 100%;
-    min-height: 1px; }
+  padding: 2rem;
+}
+.wp-block-achtvier-block-achtvier-guten-slider .editor-block-list__layout {
+  width: 100%;
+  min-height: 1px;
+}
 
 /*
- .wp-block-achtvier-block-achtvier-guten-slider > .block-editor-inner-blocks > .block-editor-block-list__layout {
-   display: flex;
-   flex-wrap: wrap;
-    > div {
-      flex: 0 0 25%;
-      flex-wrap: wrap;
-      max-width: 25%;
-      
- }
+.wp-block-achtvier-block-achtvier-guten-slider > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: flex;
+  flex-wrap: wrap;
+   > div {
+     flex: 0 0 25%;
+     flex-wrap: wrap;
+     max-width: 25%;
 
- } */
+}
+
+} */
 .block-editor-editor-skeleton__content .components-panel__body-toggle.components-button {
   background-color: #007cba;
-  color: #fff; }
+  color: #fff;
+}
 
 [data-type="achtvier/block-achtvier-guten-slider"] {
-  width: 100%; }
+  width: 100%;
+}
+
+[data-type="achtvier/slider-mk-2"] {
+  background-color: #A5FFD6;
+}
+
+[data-type="achtvier/slider-mk-2"] .is-opened .components-panel__body-title {
+  background-color: #84DCC6;
+}
 
 /**
  * #.# Editor Styles
@@ -294,20 +362,11 @@ body .block-editor-default-block-appender textarea.block-editor-default-block-ap
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-atv-menu-read-more-mobile {
-  border: 2px dotted brown; }
+[data-type="achtvierblocks/wrapperblocks"] {
+  background-color: #d3deff;
+  padding: 0.3rem;
+}
 
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-achtvierblocks-wrapperblocks {
-  border: 1px dotted blue; }
+[data-type="achtvierblocks/wrapperblocks"] label, [data-type="achtvierblocks/wrapperblocks"] .block-editor-inner-blocks {
+  background-color: #fff;
+}

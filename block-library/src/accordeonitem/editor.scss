@@ -4,3 +4,22 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
+
+ [data-type="achtvierblocks/newaccordeonpanel"]  {
+    background-color: #d3deff;
+}
+  
+[data-type="achtvierblocks/newaccordeonpanel"]   .block-editor-rich-text__editable {
+    background-color: #fff;
+}
+[data-type="achtvierblocks/newaccordeonpanel"] .components-panel__body-title > button.components-button {
+    background-color: #a6bcff;
+    padding: 0.8rem 1rem;
+  }
+[data-type="achtvierblocks/newaccordeonpanel"]   .card-body {
+    margin-top: 1rem;
+    background-color: #fff;
+}
+ [data-type="achtvierblocks/newaccordeonpanel"] .is-opened .components-panel__body-title {
+    background-color: #a6bcff;
+}

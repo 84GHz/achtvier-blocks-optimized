@@ -12,7 +12,7 @@ var config = {
 
 // here we compile the block js and scss
 var blockconfig = Object.assign({}, config, {
-  entry: ['./block-library/src/index.js','./block-library/src/style.scss','./block-library/src/editor.scss'],
+  entry: ['./block-library/src/mainindex.js','./block-library/src/style.scss','./block-library/src/editor.scss'],
   output: {
     path: __dirname + '/build',
     filename: 'index.js',

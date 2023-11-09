@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name:     Achtvier Blocks 2020
+ * Plugin Name:     Achtvier Blocks 2023
  * Plugin URI:      https://github.com/84GHz/achtvier-blocks-optimized
  * Description:     Blocksammlung 84GHz
  * Author:          84gHz
  * Author URI:      https://84ghz.de
  * Text Domain:     achtvier-blocks-optimized
  * Domain Path:     /languages
- * Version:         0.409
+ * Version:         0.5
  *
  * @package         Achtvier_Blocks_Optimized
  */
@@ -94,7 +94,9 @@ add_action( 'wp_enqueue_scripts', 'av_add_block_asset_script' );
 function av_vendor_assets() {
   wp_register_style('av-owl-mainstyle', plugin_dir_url( __FILE__ ) . '/asset-library/vendor/owl/owlcarousel.min.css');
   wp_register_style('av-owl-themestyle', plugin_dir_url( __FILE__ ) . '/asset-library/vendor/owl/owlthemedefault.min.css');
+  wp_register_style('av-animate', plugin_dir_url( __FILE__ ) . '/asset-library/vendor/animate/animate.min.css');
 	wp_enqueue_style( 'av-owl-mainstyle');
+	wp_enqueue_style( 'av-animate');
 	wp_enqueue_style( 'av-owl-themestyle');
 	wp_enqueue_script( 'av-owl-carousel', plugin_dir_url( __FILE__ ) . '/asset-library/vendor/owl/owl.carousel.min.js', array( 'jquery' ) );
 } 

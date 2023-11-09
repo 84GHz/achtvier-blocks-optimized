@@ -8,8 +8,9 @@ export const settings = {
   keywords:  ['bootstrap-container','achtvier-container'],
   edit,
   save,
+  parent: ["cgb/block-bootstrap-container", "achtvier/bootstrap-nested-container"],
   name: "cgb/block-bootstrap-cols",
-  title: ( 'ACHTVIER SPALTE' ), // Block title.
+  title: ( 'Spalte' ), // Block title.
 
 	icon: 'layout', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'layout', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.

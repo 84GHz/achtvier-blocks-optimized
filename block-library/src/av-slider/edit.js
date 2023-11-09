@@ -128,7 +128,10 @@ function AVSliderEdit (props){
 
     <div className={ props.className }>
       <p>— Hier Blöcke zum Sliden einfügen.</p>
-         <InnerBlocks />
+         <InnerBlocks
+          renderAppender={ () => (
+            <InnerBlocks.ButtonBlockAppender  /> )}
+         />
     </div>
     </PanelBody  >
 

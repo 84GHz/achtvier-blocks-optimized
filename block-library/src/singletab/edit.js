@@ -6,7 +6,10 @@ function AVSingleTabEdit (props){
 
         return (
           <div id={props.attributes.id}   className={"inner-tabs"}>
-           <InnerBlocks templateLock={ false } />
+           <InnerBlocks templateLock={ false }
+            renderAppender={ () => (
+              <InnerBlocks.ButtonBlockAppender  /> )}
+           />
           </div>
         );
 }
