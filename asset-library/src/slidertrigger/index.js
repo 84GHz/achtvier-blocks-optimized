@@ -7,6 +7,7 @@
     function av_init_sliders() {
       $('.wp-block-achtvier-block-achtvier-guten-slider').each(function(){
         var carousel = $(this);
+        var carwidth = carousel.width()
         if (carousel.hasClass("owl-loaded")) {
           carousel.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
           carousel.find('.owl-stage-outer').children().unwrap();
