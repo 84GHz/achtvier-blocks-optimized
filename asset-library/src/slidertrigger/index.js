@@ -7,7 +7,6 @@
     function av_init_sliders() {
       $('.wp-block-achtvier-block-achtvier-guten-slider').each(function(){
         var carousel = $(this);
-        var carwidth = carousel.width()
         if (carousel.hasClass("owl-loaded")) {
           carousel.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
           carousel.find('.owl-stage-outer').children().unwrap();
@@ -41,7 +40,7 @@
     
           loop:isloop,
           rewind: isrewind,
-          stagePadding: Math.round(carwidth / 4),
+          
           autoplay: isautoplay,
           nav: isnav,                
           margin:parseInt(carousel.data('slidepadding')),
@@ -55,17 +54,14 @@
           responsive:{
               0:{
                  items:parseInt(carousel.data("slidesmobile")), 
-                 stagePadding : getStagePadding(carousel.data("stagepaddingmobile"))
  
               },
               600:{
                   items:parseInt(carousel.data("slidestablet")),            
-                  stagePadding : getStagePadding(carousel.data("stagepaddingmobile"))
 
               },
               1025:{
                  items:parseInt(carousel.data("slidesdesktop")),
-                 stagePadding : getStagePadding(carousel.data("stagepaddingmobile"))
 
               }
           },
