@@ -12,6 +12,11 @@
           carousel.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
           carousel.find('.owl-stage-outer').children().unwrap();
         }        
+        function getStagePadding(paddingstring) {
+          if (paddingstring == "0") return 0;
+          return Math.round((carwidth * parseInt(paddingstring)) / 100)
+    
+        }
        // console.log("carousel width", carousel.width())
         carousel.addClass('owl-carousel');
         var slideSpeed = 600 ;
@@ -50,13 +55,18 @@
           responsive:{
               0:{
                  items:parseInt(carousel.data("slidesmobile")), 
-    
+                 stagePadding : getStagePadding(carousel.data("stagepaddingmobile"))
+ 
               },
               600:{
                   items:parseInt(carousel.data("slidestablet")),            
+                  stagePadding : getStagePadding(carousel.data("stagepaddingmobile"))
+
               },
               1025:{
                  items:parseInt(carousel.data("slidesdesktop")),
+                 stagePadding : getStagePadding(carousel.data("stagepaddingmobile"))
+
               }
           },
       })
