@@ -1,9 +1,23 @@
+# TMP/ATTRIBUTE FILES
+# -------------------
+__MACOSX
 .DS_Store
+._*
+.*.swp
+
+# IGNORE BACKUPS
+# --------------
+*.sql
+*.tar.gz
+*.zip
+
+# NODE STUFF
+# --------------
+node_modules/
+
+
+
 phpcs.xml
 phpunit.xml
 Thumbs.db
 wp-cli.local.yml
-node_modules/
-*.sql
-*.tar.gz
-*.zip
