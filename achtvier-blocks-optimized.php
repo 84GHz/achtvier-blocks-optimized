@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name:     Achtvier Blocks 2023
+ * Plugin Name:     Achtvier Blocks 2027
  * Plugin URI:      https://github.com/84GHz/achtvier-blocks-optimized
- * Description:     Blocksammlung 84GHz
- * Author:          84gHz
- * Author URI:      https://84ghz.de
+ * Description:     Blocksammlung 84 GHz
+ * Author:          84 GHz
+ * Author URI:      https://www.84ghz.de
  * Text Domain:     achtvier-blocks-optimized
  * Domain Path:     /languages
- * Version:         0.508
- *
+ * Version:         2027.1
+ * Update URI:		false
  * @package         Achtvier_Blocks_Optimized
  */
 
@@ -18,7 +18,7 @@
 
 function plugin_slug_register_blocks() {
 
-    // Register gutenber editor js
+    // Register gutenberg editor js
     wp_register_script(
       'achtvier-blocks-editor-js',
         plugins_url( 'build/index.js', __FILE__ ),
@@ -105,8 +105,9 @@ add_action( 'wp_enqueue_scripts', 'av_vendor_assets' );
 
 add_filter( 'block_categories', 'achtvier_block_category', 10, 2);
 
-//plugin update checker
+//plugin update checker - 2027 stillgelegt
 
+/*
 if (!(class_exists("Puc_v4_Factory"))) {
   require 'plugin-update-checker/plugin-update-checker.php';
 }
@@ -115,3 +116,4 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__,
 	'achtvier-blocks-optimized'
 );
+*/
